@@ -1,32 +1,28 @@
 'use strict';
 
-// let NameProduct = 'bananas';
-// let QuantityGoods = 5;
-// let ProductCategory = 'FoodProduct';
-// let PriceProduct = 20;
+const nameproduct = prompt('Какое наименование товара?');
+console.log(typeof nameproduct);
 
-// console.log('NameProduct:','bananas');
+const quantitygoods = Number(prompt('Какое количествро товара?'));
+// QuantityGoods = Number(QuantityGoods);
+console.log(typeof quantitygoods);
+  // , parseInt(QuantityGoods, Number));
 
-// console.log(PriceProduct * QuantityGoods);
+if (quantitygoods !== Number) {
+  alert('Вы ввели некорректные данные')
+}
 
-// console.log(20 * 5);
+const productcategory = prompt('Какая категория товара?');
+console.log(typeof productcategory);
 
-// let TotalAmount;
+const priceproduct = Number(prompt('Какая цена товара?'));
+console.log(typeof priceproduct);
 
-// console.log(TotalAmount = PriceProduct * QuantityGoods);
+if (priceproduct === Number) {
+  alert('Вы ввели некорректные данные')
+}
 
-const NameProduct = prompt('Какое наименование товара?');
-console.log(typeof NameProduct);
+const totalamount = priceproduct * quantitygoods;
 
-const QuantityGoods = prompt('Какое количествро товара?');
-console.log(typeof QuantityGoods, parseInt(QuantityGoods, Number));
+console.log('В корзине', quantitygoods, nameproduct,'на сумму', totalamount, 'золотых');
 
-const ProductCategory = prompt('Какая категория товара?');
-console.log(typeof ProductCategory);
-
-const PriceProduct = prompt('Какая цена товара?');
-console.log(typeof PriceProduct);
-
-const TotalAmount = PriceProduct * QuantityGoods;
-
-console.log('В корзине', QuantityGoods, NameProduct,'на сумму', TotalAmount, 'золотых');
