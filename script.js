@@ -5,11 +5,12 @@ console.log(typeof nameproduct);
 
 const quantitygoods = Number(prompt('Какое количествро товара?'));
 
-// QuantityGoods = Number(QuantityGoods);
-console.log(typeof quantitygoods);
-  // , parseInt(QuantityGoods, Number));
+// quantitygoods = Number, parseInt(quantitygoods, Number);
 
-if (quantitygoods !== Number) {
+console.log(typeof quantitygoods);
+ 
+
+if (isNaN(quantitygoods)) {
   alert('Вы ввели некорректные данные')
 }
 
@@ -19,7 +20,7 @@ console.log(typeof productcategory);
 const priceproduct = Number(prompt('Какая цена товара?'));
 console.log(typeof priceproduct);
 
-if (priceproduct === Number) {
+if (isNaN(priceproduct)) {
   alert('Вы ввели некорректные данные')
 }
 
